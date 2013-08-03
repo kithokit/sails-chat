@@ -1,2 +1,2 @@
-# chatrm
+# sails-chat
 ### a Sails application

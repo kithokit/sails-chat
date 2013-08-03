@@ -7,16 +7,23 @@
  */
 
 module.exports = {
-  adapter: 'mysql',
 
-  config: {
-    user: 'root',
-    password: 'password',
-    database: 'sails',
-    host: '127.0.0.1'
-  },
+  //adapter: 'mysql',
+
+  //config : {
+    //user: 'root',
+    //password: 'password',
+    //database: 'sails',
+    //host: '127.0.0.1',
+  //},
+
   attributes: {
-  	message: 'string'
+
+    messages: 'STRING',
+  	/* e.g.
+  	nickname: 'string'
+  	*/
+
   }
 
 };
