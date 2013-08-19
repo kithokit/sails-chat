@@ -1,6 +1,5 @@
 $('#send').on('click',function() {
   data = $('#message').val();
-  console.log("data");
   $.ajax({
           url: "http://localhost:1337/messages",
           type: 'post',
@@ -11,9 +10,17 @@ $('#send').on('click',function() {
               }
           }
   });
+  $('#message').val('');
 
 return false;
 })
+
+
+$('#message').keypress(function(e) {
+  if(e.which == 13) {
+     $('#send').trigger('click');
+  }
+});
 
 socket.get('/messages/', function(messages){
   $.each(messages, function(i, value) {

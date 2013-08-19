@@ -1,15 +1,15 @@
+<%- partial('partials/header') %>
 
-<h1>Blahblah chat room</h1>
 <div>
-    <h3>Message</h3>
-    <input type="text" id="message" placeholder="Type message here" />
-    <button id="send">Send Message</button>
+  <h3>Incoming Message</h3>
+  <ul id="chattable">
+  </ul>
 </div>
-<br>
-<div>
-    <h5>incoming Message</h5>
-    <ul id="chattable">
-    </ul>
+<div class="well input-group input-group-lg">
+  <input type="text" id="message" class="form-control input-lg" placeholder="Type message here" />
+  <span class="input-group-btn">
+    <button class="btn btn-default" type="button" id="send">>></button>
+  </span>
 </div>
 
 <%- partial('partials/footer') %>
